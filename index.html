@@ -1,0 +1,96 @@
+<!doctype html5>
+<html lang='en'>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="">
+
+	<meta name="description" content="">
+	<meta name="author" content="Temitope">
+	
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+
+	<title>Grade Sheet</title>
+
+
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row justify-content-center	">	
+		<div class="col-12">
+			<div class="table-responsive">
+				<table class="table table-hover table-borderless">
+					<thead class="thead-dark">
+						<tr>
+							<th>SUBJECT</th>
+							<th>SCORE</th>
+							<th>GRADE</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>English</th>
+							<td><input type="number" value="" name="score" id="english" onchange="out()"></td>
+							<td><input type="text" value="" name="grade" id="enggrade"></td>
+						</tr>
+					
+						<tr>
+							<th>Mathematics</th>
+							<td><input type="number" name="score" id="math" onchange="outm()"></td>
+							<td><input type="text" name="grade" id="mathgrade"></td>
+						</tr>
+					
+						<tr>
+							<th>Chemistry</th>
+							<td><input type="number" name="score" id="chem" onchange="outc()"></td>
+							<td><input type="text" name="grade" id="chemgrade"></td>
+						</tr>
+				
+						<tr>
+							<th>Biology</th>
+							<td><input type="number" name="score" id="bio" onchange="outb()"></td>
+							<td><input type="text" name="grade" id="biograde"></td>
+						</tr>
+					
+						<tr>
+							<th>French</th>
+							<td><input type="number" name="score" id="fren" onchange="outf()"></td>
+							<td><input type="text" name="grade" id="frengrade"></td>
+						</tr>
+						<tr>
+							<th>TOTAL</th>
+							<td id="total"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>AVERAGE</th>
+							<td id="average"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>REMARKS</th>
+							<td id="remarks"></td>
+							<td id="emoji"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<button type="button"  class="btn btn-dark btn-block" onclick="result()">Get Result</button>
+
+</div>			
+	<script src="result.js"></script>
+
+<!-- javaScript Files -->
+<script type="text/javascript" src="bootstrap/js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
